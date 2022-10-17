@@ -11,12 +11,12 @@ function WeatherInfo({weatherData, cityName}){
           <p>No data found</p>
       ): (
            <>
-  <h3>{weatherData.main.temp}<sup>o</sup> Cel</h3>
+  <h3>{((weatherData.main.temp)/10).toFixed(1)}<sup>o</sup> Cel</h3>
   <hr />
  <div className="row">
-  <div className="col-sm-4">{weatherData.main.temp_max}<sup>o</sup> Cel<br /><b>Max Temp</b></div>
-  <div className="col-sm-4">{weatherData.main.temp_min}<sup>o</sup> Cel<br /><b>Min Temp</b></div>
-  <div className="col-sm-4">{weatherData.main.humidity}%<br /><b>Humidity</b></div>
+  <div className="col-sm-4">{((weatherData.main.temp_max)/10).toFixed(1)}<sup>o</sup> Cel<br /><b>Max Temp</b></div>
+  <div className="col-sm-4">{((weatherData.main.temp_min)/10).toFixed(1)}<sup>o</sup> Cel<br /><b>Min Temp</b></div>
+  <div className="col-sm-4">{((weatherData.main.humidity)/10).toFixed(1)}%<br /><b>Humidity</b></div>
  
 </div> 
            </>
