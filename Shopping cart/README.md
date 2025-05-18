@@ -42,25 +42,21 @@ These skills empower companies to build seamless, intuitive shopping experiences
 
 git clone https://github.com/yourusername/react-shopping-cart.git
 
-text
 
 2. Navigate to the project directory:
 
 cd react-shopping-cart
 
-text
 
 3. Install dependencies:
 
 npm install
 
-text
 
 4. Start the development server:
 
 npm start
 
-text
 
 5. Open your browser and visit `http://localhost:3000` to use the app.
 
@@ -86,8 +82,6 @@ setCartItems(cartItems.map(item =>
 item.id === id ? { ...item, quantity } : item
 ));
 };
-
-text
 
 ## Contributing
 
